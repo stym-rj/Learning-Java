@@ -5,8 +5,8 @@ public class bq_classwork {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         String name = new String();
-        char gender;
-        long phoneNumber;
+        char gender = 'M';
+        long phoneNumber = 0;
         int roomNo = 100;
         int choice = 0;
         int mealType;
@@ -15,6 +15,7 @@ public class bq_classwork {
         System.out.println("2 : Meal");
         System.out.println("3 : Display Records");
         System.out.println("4 : Exit");
+        choice = sc.nextInt();
 
         while(choice != 4) {
             switch (choice) {
@@ -67,7 +68,7 @@ public class bq_classwork {
                             System.out.println("4 : Chholey Bhature");
                             System.out.println("5 : Previous Menu");
                             int lunch_choice = sc.nextInt();
-                            switch(breakfast_choice) {
+                            switch(lunch_choice) {
                                 case 1 :
                                     System.out.println("1 Plate Plain Chawal Daal : Rs. 60");
                                     break;
@@ -91,7 +92,7 @@ public class bq_classwork {
                             System.out.println("4 : Normal Thali");
                             System.out.println("5 : Previous Menu");
                             int dinner_choice = sc.nextInt();
-                            switch(breakfast_choice) {
+                            switch(dinner_choice) {
                                 case 1 :
                                     System.out.println("5 Pc. Idli with Sambhar : Rs. 50");
                                     break;
